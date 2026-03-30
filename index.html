@@ -28,21 +28,21 @@
             <div class="left">
                 <div class="title">
                     <h1 class="happy">
-                        <span style="--t: 4s;">H</span>
-                        <span style="--t: 4.2s;">a</span>
-                        <span style="--t: 4.4s;">p</span>
-                        <span style="--t: 4.6s;">p</span>
-                        <span style="--t: 4.8s;">y</span>
+                        <span style="--t: 3.5s;">H</span>
+                        <span style="--t: 3.7s;">a</span>
+                        <span style="--t: 3.9s;">p</span>
+                        <span style="--t: 4.1s;">p</span>
+                        <span style="--t: 4.3s;">y</span>
                     </h1>
                     <h1 class="birthday">
-                        <span style="--t: 5s;">B</span>
-                        <span style="--t: 5.2s;">i</span>
-                        <span style="--t: 5.4s;">r</span>
-                        <span style="--t: 5.6s;">t</span>
-                        <span style="--t: 5.8s;">h</span>
-                        <span style="--t: 6s;">d</span>
-                        <span style="--t: 6.2s;">a</span>
-                        <span style="--t: 6.4s;">y</span>
+                        <span style="--t: 4.5s;">B</span>
+                        <span style="--t: 4.7s;">i</span>
+                        <span style="--t: 4.9s;">r</span>
+                        <span style="--t: 5.1s;">t</span>
+                        <span style="--t: 5.3s;">h</span>
+                        <span style="--t: 5.5s;">d</span>
+                        <span style="--t: 5.7s;">a</span>
+                        <span style="--t: 5.9s;">y</span>
                     </h1>
                     <div class="hat">
                         <img src="./images/hat.png" alt="" width="130">
@@ -100,18 +100,18 @@
                 </div>
             </div>
         </div>
-        <div class="decorate_star star1" style="--t: 15s;"></div>
-        <div class="decorate_star star2" style="--t: 15.2s;"></div>
-        <div class="decorate_star star3" style="--t: 15.4s;"></div>
-        <div class="decorate_star star4" style="--t: 15.6s;"></div>
-        <div class="decorate_star star5" style="--t: 15.8s;"></div>
-        <div class="decorate_flower--one" style="--t: 15s;">
+        <div class="decorate_star star1" style="--t: 14.5s;"></div>
+        <div class="decorate_star star2" style="--t: 14.7s;"></div>
+        <div class="decorate_star star3" style="--t: 14.9s;"></div>
+        <div class="decorate_star star4" style="--t: 15.1s;"></div>
+        <div class="decorate_star star5" style="--t: 15.3s;"></div>
+        <div class="decorate_flower--one" style="--t: 14.5s;">
             <img width="20" src="./images/decorate_flower.png" alt="">
         </div>
-        <div class="decorate_flower--two" style="--t: 15.3s;">
+        <div class="decorate_flower--two" style="--t: 14.8s;">
             <img width="20" src="./images/decorate_flower.png" alt="">
         </div>
-        <div class="decorate_flower--three" style="--t: 15.6s;">
+        <div class="decorate_flower--three" style="--t: 15.1s;">
             <img width="20" src="./images/decorate_flower.png" alt="">
         </div>
         <div class="decorate_bottom">
@@ -184,7 +184,7 @@
                 clearInterval(timeDatetxt)
             }
         }, 100)
-    }, 12000)
+    }, 11500)
 
     var intervalContent;
     var intervalTitle;
@@ -192,7 +192,7 @@
         $(".box__letter").slideDown()
         setTimeout(function () {
             $(".letter__border").slideDown();
-        }, 1000)
+        }, 500)
         setTimeout(function () {
             intervalTitle = setInterval(function () {
                 if (currentIndexTitle < charArrTitle.length) {
@@ -206,17 +206,17 @@
                     clearInterval(intervalTitle)
                 }
             }, 100)
-        }, 2000)
+        }, 1500)
         setTimeout(function () {
             document.querySelector("#heart__letter").classList.add("animationOp");
             document.querySelector(".love__img").classList.add("animationOp");
             document.querySelector("#mewmew").classList.add("animationOp");
-        }, 2800)
+        }, 2300)
         setTimeout(function () {
             document.querySelectorAll(".heart").forEach((item) => {
                 item.classList.add("animation")
             })
-        }, 3500)
+        }, 3000)
         setTimeout(function () {
             intervalContent = setInterval(function () {
                 if (currentIndexLetter < charArrDateLetter.length) {
@@ -227,7 +227,7 @@
                     clearInterval(intervalContent)
                 }
             }, 50)
-        }, 6000)
+        }, 5500)
     })
     $(".close").on("click", function () {
         clearInterval(intervalContent)
@@ -244,8 +244,6 @@
         $(".box__letter").slideUp();
         $(".letter__border").slideUp();
     })
-
-
 
     let mailBox = document.querySelector('.mail')
     let boxmail = document.querySelector('.boxMail')
